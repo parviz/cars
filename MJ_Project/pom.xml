@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MJ_Project</groupId>
+  <artifactId>MJ_Project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Maven_version</name>
+  
+  <dependencies> 
+	<!-- Adding TestNG for unit test support -->
+	 <dependency> 
+	 	<groupId>org.testng</groupId>
+	  	<artifactId>testng</artifactId>
+	  	<version>6.8</version>
+	  </dependency> 
+	<!-- Adding Selenium dependency -->
+  	<dependency>
+   		<groupId>org.seleniumhq.selenium</groupId>
+   		 <artifactId>selenium-server</artifactId>
+   		 <version>2.31.0</version> </dependency>
+   	</dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin> <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.6</version> 
+        <configuration> 
+		<!-- We use a property here, because we want the ability to change the suite file on the fly during runs '-DsuiteXmlFile=src/test/resources/testng-sample.xml' -->
+ 		<suiteXmlFiles> 
+ 		<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+ 		 </suiteXmlFiles> 
+		<!-- Build with '-DskipTests=true' to bypass test execution @ build time Default: false -->
+ 		<skipTests>${skipTests}</skipTests>
+ 		 <testFailureIgnore>true</testFailureIgnore>
+ 		  </configuration>
+ 		  </plugin>
+    </plugins>
+  </build>
+</project>
