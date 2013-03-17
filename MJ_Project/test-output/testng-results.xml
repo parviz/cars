@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49088" started-at="2013-03-17T15:12:33Z" finished-at="2013-03-17T15:13:22Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="49088" started-at="2013-03-17T15:12:33Z" finished-at="2013-03-17T15:13:22Z">
+      <class name="com.qa.jen.MyWebDriver">
+        <test-method status="PASS" signature="beformethode()[pri:0, instance:com.qa.jen.MyWebDriver@618414fa]" name="beformethode" is-config="true" duration-ms="18637" started-at="2013-03-17T11:12:33Z" finished-at="2013-03-17T11:12:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beformethode -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.jen.MyWebDriver@618414fa]" name="test" duration-ms="30425" started-at="2013-03-17T11:12:52Z" finished-at="2013-03-17T11:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="aftremethode()[pri:0, instance:com.qa.jen.MyWebDriver@618414fa]" name="aftremethode" is-config="true" duration-ms="0" started-at="2013-03-17T11:13:22Z" finished-at="2013-03-17T11:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftremethode -->
+      </class> <!-- com.qa.jen.MyWebDriver -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
