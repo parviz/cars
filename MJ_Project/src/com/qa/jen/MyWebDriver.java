@@ -63,6 +63,6 @@ public class MyWebDriver {
 	}
 	@AfterMethod
 	public void aftremethode(){
-		//driver.close();
+		driver.close();
 		}
 	}
