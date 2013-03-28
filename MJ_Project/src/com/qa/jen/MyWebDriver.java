@@ -44,7 +44,7 @@ public class MyWebDriver {
 		Select newMillCombo = findComboBox(By.name("rd"));
 		newMillCombo.selectByVisibleText("50 Miles");
 		
-		WebElement zipCode = driver.findElement(By.xpath("//div[2]/div[@id='zc-div']"));//input[@id='zc2']
+		WebElement zipCode = driver.findElement(By.id("zc2"));//xpath("//div[2]/div[@id='zc-div']"));//input[@id='zc2']
 		//zipCode.clear();
 		String text = "20853";
 		System.out.println(zipCode);
