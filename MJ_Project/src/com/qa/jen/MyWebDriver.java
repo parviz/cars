@@ -22,8 +22,8 @@ public class MyWebDriver {
 	public void beformethode(){
 		File file =new File("C:/DevTools/IEDriverServer.exe"); //lib\\IEDriverServer.exe");
 		System.setProperty("webdriver.ie.driver",file.getAbsolutePath());
-		driver = new InternetExplorerDriver();
-		//driver = new FirefoxDriver();
+		//driver = new InternetExplorerDriver();
+		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.navigate().to("http://www.cars.com");
 		
@@ -44,9 +44,11 @@ public class MyWebDriver {
 		Select newMillCombo = findComboBox(By.name("rd"));
 		newMillCombo.selectByVisibleText("50 Miles");
 		
-		WebElement zipCode = driver.findElement(By.id("zc2"));
-		zipCode.clear();
-		zipCode.sendKeys("20853");
+		WebElement zipCode = driver.findElement(By.xpath("//div[2]/div[@id='zc-div']"));//input[@id='zc2']
+		//zipCode.clear();
+		String text = "20853";
+		System.out.println(zipCode);
+		zipCode.sendKeys(text);
 		WebElement search = driver.findElement(By.name("submit"));
 		search.click();
 		Thread.sleep(2000);
