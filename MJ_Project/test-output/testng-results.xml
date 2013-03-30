@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33107" started-at="2013-03-28T23:21:03Z" finished-at="2013-03-28T23:21:36Z">
+  <suite name="Default suite" duration-ms="30779" started-at="2013-03-30T02:58:43Z" finished-at="2013-03-30T02:59:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33107" started-at="2013-03-28T23:21:03Z" finished-at="2013-03-28T23:21:36Z">
+    <test name="Default test" duration-ms="30779" started-at="2013-03-30T02:58:43Z" finished-at="2013-03-30T02:59:13Z">
       <class name="com.qa.jen.MyWebDriver">
-        <test-method status="PASS" signature="beformethode()[pri:0, instance:com.qa.jen.MyWebDriver@6beb3926]" name="beformethode" is-config="true" duration-ms="20001" started-at="2013-03-28T19:21:03Z" finished-at="2013-03-28T19:21:23Z">
+        <test-method status="PASS" signature="beformethode()[pri:0, instance:com.qa.jen.MyWebDriver@43a2a89a]" name="beformethode" is-config="true" duration-ms="19236" started-at="2013-03-29T22:58:43Z" finished-at="2013-03-29T22:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beformethode -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.jen.MyWebDriver@6beb3926]" name="test" duration-ms="13043" started-at="2013-03-28T19:21:23Z" finished-at="2013-03-28T19:21:36Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.jen.MyWebDriver@43a2a89a]" name="test" duration-ms="11513" started-at="2013-03-29T22:59:02Z" finished-at="2013-03-29T22:59:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="aftremethode()[pri:0, instance:com.qa.jen.MyWebDriver@6beb3926]" name="aftremethode" is-config="true" duration-ms="31" started-at="2013-03-28T19:21:36Z" finished-at="2013-03-28T19:21:36Z">
+        <test-method status="PASS" signature="aftremethode()[pri:0, instance:com.qa.jen.MyWebDriver@43a2a89a]" name="aftremethode" is-config="true" duration-ms="10" started-at="2013-03-29T22:59:13Z" finished-at="2013-03-29T22:59:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftremethode -->
