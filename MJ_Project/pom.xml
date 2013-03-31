@@ -32,6 +32,12 @@
       <plugin> <groupId>org.apache.maven.plugins</groupId>
        <artifactId>maven-surefire-plugin</artifactId>
         <version>2.6</version>
+	<configuration>
+           <suiteXmlFiles>
+               <suiteXmlFile>C:\jenkins\carSlave\workspace\cars\MJ_Project\testng.xml</suiteXmlFile>
+            </suiteXmlFiles>
+          </configuration>
+
         
         <executions>
         <execution>
@@ -49,19 +55,17 @@
             </includes> 
           </configuration>-->
         </execution>
-      </executions>
-        
-         
-        <configuration> 
-		<!-- We use a property here, because we want the ability to change the suite file on the fly during runs '-DsuiteXmlFile=src/test/resources/testng-sample.xml' -->
+      </executions>  
+     <!--    <configuration> 
+		 We use a property here, because we want the ability to change the 		suite file on the fly during runs '-		DsuiteXmlFile=src/test/resources/testng-sample.xml' 
  		<suiteXmlFiles> 
  		<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
  		 </suiteXmlFiles> 
-		<!-- Build with '-DskipTests=true' to bypass test execution @ build time Default: false 
+		 Build with '-DskipTests=true' to bypass test execution @ build time 		Default: false 
  		<skipTests>${skipTests}</skipTests>
- 		 <testFailureIgnore>true</testFailureIgnore>-->
+ 		 <testFailureIgnore>true</testFailureIgnore>
  		 
- 		  </configuration>
+ 		  </configuration> -->
  		  </plugin>
     </plugins>
   </build>
