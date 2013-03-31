@@ -35,19 +35,19 @@
         
         <executions>
         <execution>
-          <id>integration-test</id>
+          <!--  <id>integration-test</id>-->
           <goals>
             <goal>test</goal>
           </goals>
-          <phase>integration-test</phase>
+   <!--     <phase>integration-test</phase> 
           <configuration>
             <excludes>
               <exclude>none</exclude>
             </excludes>
             <includes>
               <include>**/*IntegrationTest.java</include>
-            </includes>
-          </configuration>
+            </includes> 
+          </configuration>-->
         </execution>
       </executions>
         
@@ -57,9 +57,10 @@
  		<suiteXmlFiles> 
  		<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
  		 </suiteXmlFiles> 
-		<!-- Build with '-DskipTests=true' to bypass test execution @ build time Default: false -->
+		<!-- Build with '-DskipTests=true' to bypass test execution @ build time Default: false 
  		<skipTests>${skipTests}</skipTests>
- 		 <testFailureIgnore>true</testFailureIgnore>
+ 		 <testFailureIgnore>true</testFailureIgnore>-->
+ 		 
  		  </configuration>
  		  </plugin>
     </plugins>
