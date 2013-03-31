@@ -37,8 +37,6 @@
                <suiteXmlFile>C:\jenkins\carSlave\workspace\cars\MJ_Project\testng.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
-
-        
         <executions>
         <execution>
           <!--  <id>integration-test</id>-->
