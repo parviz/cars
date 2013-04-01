@@ -37,23 +37,7 @@
                <suiteXmlFile>C:\jenkins\carSlave\workspace\cars\MJ_Project\testng.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
-        <executions>
-        <execution>
-          <!--  <id>integration-test</id>-->
-          <goals>
-            <goal>test</goal>
-          </goals>
-   <!--     <phase>integration-test</phase> 
-          <configuration>
-            <excludes>
-              <exclude>none</exclude>
-            </excludes>
-            <includes>
-              <include>**/*IntegrationTest.java</include>
-            </includes> 
-          </configuration>-->
-        </execution>
-      </executions>  
+       
      <!--    <configuration> 
 		 We use a property here, because we want the ability to change the 		suite file on the fly during runs '-		DsuiteXmlFile=src/test/resources/testng-sample.xml' 
  		<suiteXmlFiles> 
